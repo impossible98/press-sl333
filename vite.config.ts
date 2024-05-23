@@ -9,7 +9,14 @@ export default defineConfig({
       userscript: {
         icon: 'https://vitejs.dev/logo.svg',
         namespace: 'impossible98/press-slash-to-search',
-        match: ['https://www.bilibili.com/*'],
+        match: [
+          'https://www.bilibili.com/*',
+          'https://search.bilibili.com/*',
+        ],
+        name: 'Press Slash to Search',
+        description: 'Press Slash to Search',
+        author: 'impossible98',
+        license: 'MIT',
       },
     }),
   ],
