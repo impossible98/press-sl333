@@ -8,8 +8,8 @@ export default defineConfig({
       entry: 'src/main.ts',
       userscript: {
         icon: 'https://vitejs.dev/logo.svg',
-        namespace: 'npm/vite-plugin-monkey',
-        match: ['https://www.google.com/'],
+        namespace: 'impossible98/press-slash-to-search',
+        match: ['https://www.bilibili.com/*'],
       },
     }),
   ],
