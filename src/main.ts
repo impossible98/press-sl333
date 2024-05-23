@@ -9,7 +9,12 @@ if (location.host.includes("www.bilibili.com")) {
   handleKeydown('[type="search"]')
 } else if (location.host.includes("www.baidu.com")) {
   handleKeydown('#kw.s_ipt')
+} else if (location.href.includes("www.sogou.com/web") || location.host.includes("sogou.com/web")) {
+  handleKeydown('#upquery.query')
+} else if (location.host.includes("www.sogou.com") || location.host.includes("sogou.com")) {
+  handleKeydown('#query.sec-input.active')
 }
+
 function handleKeydown(query: string) {
   let form: HTMLInputElement | null = document.querySelector(query) as HTMLInputElement;
   document.documentElement.addEventListener("keydown", (event) => {
