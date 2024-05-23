@@ -1,7 +1,12 @@
+// 自带 Press / to Search
+// google.com
+// youtube.com
 if (location.host.includes("www.bilibili.com")) {
   handleKeydown('.nav-search-input')
 } else if (location.host.includes("search.bilibili.com")) {
   handleKeydown('.search-input-el')
+} else if (location.host.includes("greasyfork.org")) {
+  handleKeydown('[type="search"]')
 }
 
 function handleKeydown(query: string) {
