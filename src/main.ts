@@ -7,8 +7,9 @@ if (location.host.includes("www.bilibili.com")) {
   handleKeydown('.search-input-el')
 } else if (location.host.includes("greasyfork.org")) {
   handleKeydown('[type="search"]')
+} else if (location.host.includes("www.baidu.com")) {
+  handleKeydown('#kw.s_ipt')
 }
-
 function handleKeydown(query: string) {
   let form: HTMLInputElement | null = document.querySelector(query) as HTMLInputElement;
   document.documentElement.addEventListener("keydown", (event) => {
